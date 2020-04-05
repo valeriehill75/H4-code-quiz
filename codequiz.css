@@ -1,0 +1,28 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    background-color: lightgrey;
+    padding: 10px;
+}
+
+h2 {
+    padding: 10px;
+    text-align: right;
+    background-color: pink;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px
+}
+
+p {
+    text-align: center;
+    padding: 10px;
+}
+
+.btn-primary {
+align-items: center;
+}
