@@ -23,19 +23,34 @@
         background-color: pink;
     }
 
-    h3 {
+    .wrapper {
         text-align: center;
+        padding: 20px
+    }
+
+
+
+    .col-sm-4 {
+        padding: 20px;
+    }
+
+    h3 {
         padding: 10px
     }
 
     p {
-        text-align: center;
         padding: 20px
     }
+
+    h4 {
+        padding: 10px
+    }
+
+
 </style>
 
 <body>
-    <h1>View High Scores</h1>
+    <h1>Javascript Quiz</h1>
     <h2>Timer:</h2>
     
     <div class="wrapper">
@@ -72,7 +87,19 @@
             </div>
 
             <div class=col-sm-6>
-                <p>Enter Your Name</p>
+                <div class="clearfix">
+                    <div class="card">
+                        <p>Enter Your Name:</p>
+                        <form method="POST">
+                            <div class="input-group">
+                              <label for="name"></label>
+                              <input type="text" name="name" id="name" placeholder="" />
+                            </div>
+                            <div id="msg"></div>
+                            <button type="button" id="sumbitButton" class="btn btn-primary">Submit</button>
+                        </form>    
+                    </div>
+                </div>
             </div>
 
             <div class=col-sm-3>
@@ -81,19 +108,24 @@
     
         <div class="row">
 
-            <div class=col-sm-5>
+            <div class=col-sm-4>
             </div>
 
-            <div class=col-sm-2>
-                <button type="button" class="btn btn-primary">Submit</button>
+            <div class=col-sm-4>
+                <div class="card">
+                    <h4>High Scores:</h4>
+                    <p><span id="user-name"></span></p>
+                </div>
             </div>
 
-            <div class=col-sm-5>
+            <div class=col-sm-4>
             </div>
         
         </div>
 
     </div>
-    
+
+    <script src="quizscore.js"></script>
+
 </body>
 </html>

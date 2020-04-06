@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="quizquestions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>JS Code Quiz</title>
 </head>
 
@@ -27,10 +29,26 @@
         text-align: center;
         padding: 20px
     }
+
+    .button {
+        padding: 5px
+    }
+
+    h3 {
+        background-color: pink;
+        padding: 10px;
+    }
+
+    h4 {
+        padding: 10px;
+        text-align: right;
+        background-color: lightgray;
+    }
+
 </style>
 
 <body>
-    <h1>View High Scores</h1>
+    <h1>Javascript Quiz</h1>
     <h2>Timer:</h2>
     
     <div class="wrapper">
@@ -40,7 +58,13 @@
             </div>
             
             <div class=col-sm-4>
-                <p>Commonly used data types DO NOT include:</p>
+                <form>
+                    <p>Commonly used data types DO NOT include:</p>  
+                        <button class = button id="q1answer1">(1) strings</button>
+                        <button class = button id="q1answer2">(2) Booleans</button>
+                        <button class = button id="q1answer3">(3) alerts</button>
+                        <button class = button id="q1answer4">(4) numbers</button>
+                </form>
             </div>
 
             <div class=col-sm-4>
@@ -55,6 +79,10 @@
             
             <div class=col-sm-4>
                 <p>The condition in an if/else statement is enclosed within _____ .</p>
+                <button class = button id="qanswer1">(1) quotes</button>
+                <button class = button id="q2answer2">(2) curly brackets</button>
+                <button class = button id="q2answer3">(3) parenthesis</button>
+                <button class = button id="q2answer4">(4) sqaure brackets</button>
             </div>
 
             <div class=col-sm-4>
@@ -69,6 +97,10 @@
             
             <div class=col-sm-4>
                 <p>Arrays in Javascript can be used to store _____ .</p>
+                <button class = button id="q3answer1">(1) numbers and strings</button>
+                <button class = button id="q3answer2">(2) other arrays</button>
+                <button class = button id="q3answer3">(3) Booleans</button>
+                <button class = button id="q3answer4">(4) all of the above</button>
             </div>
 
             <div class=col-sm-4>
@@ -83,6 +115,10 @@
             
             <div class=col-sm-4>
                 <p>String values must be enclosed within _____ when being assigned to variable.</p>
+                <button class = button id="q4answer1">(1) commas</button>
+                <button class = button id="q4answer2">(2) terminal/bash</button>
+                <button class = button id="q4answer3">(3) quotes</button>
+                <button class = button id="q4answer4">(4) parenthesis</button>
             </div>
 
             <div class=col-sm-4>
@@ -96,6 +132,10 @@
                 
             <div class=col-sm-4>
                 <p>A very useful tool during development and debugging for print content to the debugger is:</p>
+                <button class = button id="q5answer1">(1) Javascript</button>
+                <button class = button id="q5answer2">(2) terminal/bash</button>
+                <button class = button id="q5answer3">(3) for loops</button>
+                <button class = button id="q5answer4">(4) console log</button>
             </div>
     
             <div class=col-sm-4>
@@ -104,6 +144,11 @@
         </div>
 
     </div>
+
+    <h3></h3>
+    <h4></h4>
+
+    <script src="quizquestions.js"></script>
 
     
 </body>
