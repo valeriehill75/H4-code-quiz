@@ -1,18 +1,22 @@
-var count=60;
+var questionIndex = 0;
+var timeEl = document.querySelector(".time");
+var mainEl = document.getElementById("main");
 
-var counter=setInterval(timer, 2000);
+var secondsLeft = 60;
 
-function timer()
-{
-  count=count-1;
-  if (count <= 0)
-  {
-     clearInterval(counter);
-     return;
-  }
-
-  document.getElementById("seconds").innerHTML="Timer:" + count
+function timer() {
+  var timerInterval = setINterval(function() {
+    secondsLeft--;
+    timeEl.textContent = "Timer: " + secondsLeft;
+  
+    if (secondsLeft === 0) {
+     clearInterval(timerInterval);
+     return prompt;
+    }
+  }, 1000);
 }
+
+setTime();
 
 
 $("#q1answer3").on("click", function() {
