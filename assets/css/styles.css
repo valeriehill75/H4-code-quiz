@@ -1,0 +1,80 @@
+* {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  .wrapper {
+    text-align: center;
+  }
+
+  h1 {
+    background-color: lightgrey;
+    padding: 10px;
+  }
+
+  hr {
+    padding: 30px;
+    background-color: pink;
+  }
+
+  .scores {
+    padding-left: 10px;
+  }
+
+  .timer {
+    padding-left: 10px;
+  }
+
+  h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h3 {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .start {
+    text-align: center;
+  }
+
+  #questions #question-title #choices {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  button {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 100%;
+    background-color:lightgray;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: black;
+    border: 5px;
+  }
+
+  #lastScreen {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    padding: 10px;
+  }
+
+  #start {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-link {
+    text-align: center;
+    font-weight: bolder;
+  }

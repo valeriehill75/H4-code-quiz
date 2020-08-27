@@ -1,36 +1,26 @@
-var nameInput = document.querySelector("#name");
-var submitButton = document.querySelector("#submitButton");
-var msgDiv = document.querySelector("#msg");
-var userNameSpan = document.querySelector("#user-name");
+function getHighScores() {
+  //get scores from local storage or set to empty array
+  var highscores = JSON.parse(window.localStorage.getItem("highscores")) || [];
+  //sort scores in descending order
+  highscores.sort(function(a, b) {
+    return b.score - a.score;
+  });
 
-renderLastRegistered();
+  highscores.forEach(function(score) {
+    var liTag = document.createElement("li");
+    liTag.textContent = score.initials + " - " + score.score;
 
-function displayMessage(type, message) {
-  msgDiv.textContent = message;
-  msgDiv.setAttribute("class", type);
+    var olEl = document.getElementById("highscores");
+    olEl.appendChild(liTag);
+  });
 }
 
-function renderLastRegistered() {
-  var name = localStorage.getItem("name");
-
-  if (name === null) {
-    return;
-  }
-
-  userNameSpan.textContent = name;
+function clearHighScores() {
+  window.localStorage.removeItem("highscores");
+  window.location.reload();
 }
 
-submitButton.addEventListener("click", function(event) {
-  event.preventDefault();
+document.getElementById("clear").onclick = clearHighScores;
 
-  var name = document.querySelector("#name").value;
-
-  if (name === "") {
-    displayMessage("error", "Name cannot be blank");
-  } else {
-    displayMessage("success", "Submitted successfully!");
-
-    localStorage.setItem("name", name);
-    renderLastRegistered();
-  }
-});
+//run function
+getHighScores();
