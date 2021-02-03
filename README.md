@@ -1,18 +1,10 @@
-# H4-code-quiz
+# code-quiz
 
-In creating a quiz testing basic knowledge of Javascript I:
+Try the javascript code quiz application at:
+[code-quiz](https://valeriehill75.github.io/code-quiz/)
 
-* Set up the basic html pages with css styling and used Bootstrap link for readability on any size browser.
+This app uses html, css styling along with a Bootstrap link for readability on any size browser, and javascript. Upon clicking the Start Quiz button, the user is presented with five quiz questions testing the user's knowledge on Javascript. A timer is started upon beginning the quiz. Wrong answers will take time off the timer. High score information is collected and displayed on the High Score page.
 
-*Added a Start Quiz button. Linking it to the quiz questions page.
-
-*Wrote the question page with all possible answers.
-
-*Added a function to alert on correct answers.
-
-*Added a timer function counting down from 60 seconds.
-
-****I was unable to get the results page or the High score pages to function. Timer seems to be counting down in two second intervals. Clearly more review on possible functions in Jquery/Javascript is needed. Needing to study what the possibilities are and memorize some of the available functions. 
-
+![screenshot](./assets/codeQuiz.png)
 
 

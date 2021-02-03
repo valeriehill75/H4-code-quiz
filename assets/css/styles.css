@@ -78,3 +78,9 @@
     text-align: center;
     font-weight: bolder;
   }
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
